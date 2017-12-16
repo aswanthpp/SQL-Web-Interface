@@ -1,0 +1,10 @@
+
+
+
+
+sudo ntfsfix /dev/sdXY
+
+
+
+
+XY -- hardware name  eg sda5 or sda4
