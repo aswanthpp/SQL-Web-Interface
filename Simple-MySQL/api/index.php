@@ -22,4 +22,11 @@ $app->get('/sampleAPI', function() use($app) {
     $app->response()->header('Content-Type', 'application/json');
     echo json_encode($data);
 });
+
+$app->get('/selectAPI', function() use($app) {
+    $db = new DbHandler();
+    $data = array("status"=>'Working Fine');
+    $app->response()->header('Content-Type', 'application/json');
+    echo json_encode($data);
+});
 $app->run();
